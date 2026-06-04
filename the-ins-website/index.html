@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 
   <!-- Schema.org: LocalBusiness -->
   <script type="application/ld+json">
@@ -493,7 +492,18 @@
         </div>
       </div>
       <div class="map-embed">
-        <div id="map" style="width:100%;height:350px;border-radius:4px;"></div>
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-96.7563%2C33.0377%2C-96.7463%2C33.0437&amp;layer=mapnik&amp;marker=33.0407%2C-96.7513"
+          width="100%"
+          height="350"
+          style="border:0;border-radius:4px;"
+          loading="lazy"
+          title="THE INS HAIR SALON — 141 W Spring Creek Pkwy #445, Plano, TX 75023"
+          allowfullscreen>
+        </iframe>
+        <p style="font-size:0.72rem;margin-top:6px;text-align:right;">
+          <a href="https://maps.google.com/?q=THE+INS+HAIR+SALON+141+W+Spring+Creek+Pkwy+%23445+Plano+TX+75023" target="_blank" rel="noopener" style="color:var(--gold-dark);">Get Directions on Google Maps →</a>
+        </p>
       </div>
     </div>
   </section>
@@ -767,28 +777,6 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WLkA=" crossorigin=""></script>
-  <script>
-    window.addEventListener('load', function() {
-      var mapEl = document.getElementById('map');
-      if (!mapEl || typeof L === 'undefined') return;
-      var map = L.map('map', { scrollWheelZoom: false }).setView([33.0407, -96.7513], 16);
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-        maxZoom: 19
-      }).addTo(map);
-      var icon = L.divIcon({
-        html: '<div style="background:#c9a84c;width:16px;height:16px;border-radius:50%;border:3px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,0.45);"></div>',
-        iconSize: [16, 16],
-        iconAnchor: [8, 8],
-        className: ''
-      });
-      L.marker([33.0407, -96.7513], { icon: icon })
-        .addTo(map)
-        .bindPopup('<strong>THE INS HAIR SALON</strong><br>141 W Spring Creek Pkwy #445<br>Plano, TX 75023<br><a href="https://maps.google.com/?q=THE+INS+HAIR+SALON+141+W+Spring+Creek+Pkwy+Plano+TX" target="_blank" style="color:#c9a84c;">Get Directions →</a>')
-        .openPopup();
-    });
-  </script>
   <script src="js/script.js"></script>
 </body>
 </html>
