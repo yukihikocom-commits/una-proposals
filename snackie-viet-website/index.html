@@ -1,1 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snackie Viet — Vietnamese Street Eats & Drinks | Richardson, TX</title>
+  <meta name="description" content="Snackie Viet in Richardson, TX serves authentic Vietnamese street food and drinks. Crispy pork belly, lemongrass rice, unique snacks, and Vietnamese coffee — open Mon–Wed & Fri–Sun.">
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Snackie Viet",
+    "image": "images/hero.jpg",
+    "url": "https://snackieviet.com",
+    "telephone": "(214) 214-5537",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "141 N Plano Rd",
+      "addressLocality": "Richardson",
+      "addressRegion": "TX",
+      "postalCode": "75081",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 32.9483,
+      "longitude": -96.7165
+    },
+    "servesCuisine": "Vietnamese",
+    "priceRange": "$",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday"], "opens": "11:00", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "00:00", "closes": "00:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "11:00", "closes": "23:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "11:00", "closes": "22:00" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "168"
+    }
+  }
+  </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are Snackie Viet's hours?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Mon–Wed 11am–10pm, Thursday closed, Fri–Sat 11am–11pm, Sunday 11am–10pm." }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is Snackie Viet located?",
+        "acceptedAnswer": { "@type": "Answer", "text": "141 N Plano Rd, Richardson, TX 75081. Parking is available in the shopping center lot." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a reservation?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No reservation needed — walk-ins are welcome. You can also order takeout or delivery via DoorDash." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Snackie Viet offer takeout or delivery?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Takeout is available by calling (214) 214-5537. Delivery is available through DoorDash." }
+      },
+      {
+        "@type": "Question",
+        "name": "What kind of food does Snackie Viet serve?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Snackie Viet specializes in authentic Vietnamese street snacks and drinks — crispy pork belly, lemongrass rice dishes, bánh mì nướng, rice paper salad, chicken feet in Thai sauce, Vietnamese coffee, boba, and seasonal specials." }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there vegetarian options?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, there are vegetarian-friendly items on the menu including rice paper salad, corn dishes, and select drinks. Please ask staff for current options." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can Snackie Viet accommodate large groups or parties?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, the restaurant can accommodate groups. For larger parties, calling ahead at (214) 214-5537 is recommended to ensure seating." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does a meal at Snackie Viet cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Snackie Viet is a budget-friendly spot. Most dishes and snacks range from $5–$15, making it easy to sample several items. Average spend is under $20 per person." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Snackie Viet family-friendly?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — the casual, lively atmosphere is welcoming for families. The menu has a wide variety of approachable dishes that work for all ages." }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes Snackie Viet different from other Vietnamese restaurants?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Unlike traditional Vietnamese restaurants focused on pho, Snackie Viet specializes in Vietnamese street snacks and drinks that are hard to find elsewhere in DFW — from bánh tráng trộn to chân gà (chicken feet) and unique seasonal drinks." }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+<!-- ══ NAV ══════════════════════════════════════════════ -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img class="nav-logo-img" src="images/logo.png" alt="Snackie Viet logo" onerror="this.style.display='none'">
+      <div class="nav-logo-badge">
+        <span class="nav-logo-main">Snackie Viet</span>
+        <span class="nav-logo-sub">Vietnamese Street Eats</span>
+      </div>
+    </a>
+    <div class="nav-links" role="menubar">
+      <a href="#menu" class="nav-link" role="menuitem">Menu</a>
+      <a href="#story" class="nav-link" role="menuitem">Our Story</a>
+      <a href="#hours" class="nav-link" role="menuitem">Hours</a>
+      <a href="#faq" class="nav-link" role="menuitem">FAQ</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switcher" role="group" aria-label="Language selection">
+        <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="vi" aria-label="Vietnamese">VI</button>
+        <button class="lang-btn" data-lang="zh" aria-label="Chinese">中文</button>
+        <button class="lang-btn" data-lang="ko" aria-label="Korean">한</button>
+        <button class="lang-btn" data-lang="es" aria-label="Spanish">ES</button>
+      </div>
+      <a href="#contact" class="nav-cta">Order Now</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Announcement Bar -->
+<div class="announce-bar">
+  <p>🆕 Try Our New Menu — <a href="#menu">See What's New</a> &nbsp;·&nbsp; Now Open Fri &amp; Sat until 11pm</p>
+</div>
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="#menu" class="nav-link">Menu</a>
+  <a href="#story" class="nav-link">Our Story</a>
+  <a href="#hours" class="nav-link">Hours & Location</a>
+  <a href="#faq" class="nav-link">FAQ</a>
+  <a href="#contact" class="nav-link">Order / Contact</a>
+  <div class="mobile-lang">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="vi">VI</button>
+    <button class="lang-btn" data-lang="zh">中文</button>
+    <button class="lang-btn" data-lang="ko">한</button>
+    <button class="lang-btn" data-lang="es">ES</button>
+  </div>
+</div>
+
+
+<!-- ══ HERO ══════════════════════════════════════════════ -->
+<section class="hero" id="top">
+  <!-- Full-screen background image -->
+  <img id="hero-bg-img"
+    src="images/hero.png"
+    alt="Vietnamese street food dishes at Snackie Viet, Richardson TX"
+    onerror="this.style.display='none'">
+
+  <!-- Dark overlay -->
+  <div class="hero-overlay" aria-hidden="true"></div>
+
+  <!-- AI definition — visible to search bots only -->
+  <p class="hero-ai-def">Snackie Viet is a Vietnamese street food restaurant in Richardson, TX, specializing in authentic snacks and drinks — open for dine-in, takeout, and delivery.</p>
+
+  <!-- Content -->
+  <div class="hero-inner">
+    <div class="hero-content">
+
+      <div class="hero-eyebrow">
+        <span data-en>Richardson, TX · Vietnamese Street Eats</span>
+        <span data-vi>Richardson, TX · Ẩm Thực Đường Phố Việt</span>
+        <span data-zh>理查森, TX · 越南街头小吃</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+        <span data-ko>Richardson, TX · 베트남 길거리 음식</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+        <span data-es>Richardson, TX · Comida Callejera Vietnamita</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+      </div>
+
+      <!-- Logo badge + name -->
+      <div class="hero-logo-area">
+        <div class="hero-logo-circle">
+          <img src="images/logo.png" alt="Snackie Viet" onerror="this.style.display='none'">
+        </div>
+        <div class="hero-name-stack">
+          <span class="hero-name-en">Snackie Viet</span>
+          <span class="hero-name-viet">
+            <span data-en>Vietnamese Street Eats &amp; Drinks</span>
+            <span data-vi>Ẩm Thực Đường Phố Việt</span>
+            <span data-zh>越南街头小吃与饮料</span>
+            <span data-ko>베트남 스트리트 푸드 & 음료</span>
+            <span data-es>Comida y Bebidas Vietnamitas</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-sep" aria-hidden="true"></div>
+
+      <p class="hero-h1">
+        <span data-en>The flavors you <strong>craved but couldn't find</strong> — right here in Richardson.</span>
+        <span data-vi>Những hương vị bạn <strong>luôn thèm muốn</strong> — ngay tại Richardson.</span>
+        <span data-zh>你一直<strong>渴望的味道</strong>，就在Richardson。</span>
+        <span data-ko>당신이 항상 <strong>찾던 그 맛</strong> — 여기 Richardson에 있습니다.</span>
+        <span data-es>Los sabores que <strong>siempre buscaste</strong> — aquí mismo en Richardson.</span>
+      </p>
+
+      <!-- Stats -->
+      <div class="hero-stats" role="list">
+        <div class="hero-stat" role="listitem">
+          <span class="stat-num">4.9</span>
+          <span class="stat-lbl">Google Rating</span>
+        </div>
+        <div class="hero-stat-sep" aria-hidden="true"></div>
+        <div class="hero-stat" role="listitem">
+          <span class="stat-num">168</span>
+          <span class="stat-lbl">Yelp Reviews</span>
+        </div>
+        <div class="hero-stat-sep" aria-hidden="true"></div>
+        <div class="hero-stat" role="listitem">
+          <span class="stat-num">500+</span>
+          <span class="stat-lbl">Yelp Photos</span>
+        </div>
+      </div>
+
+      <!-- CTAs -->
+      <div class="hero-ctas">
+        <a href="https://www.doordash.com/store/snackie-viet-26274838/" target="_blank" rel="noopener" class="btn-primary">
+          <span data-en>Order Delivery</span>
+          <span data-vi>Đặt Giao Hàng</span>
+          <span data-zh>外卖点餐</span>
+          <span data-ko>배달 주문</span>
+          <span data-es>Pedir Delivery</span>
+        </a>
+        <a href="#menu" class="btn-ghost">
+          <span data-en>See Menu</span>
+          <span data-vi>Xem Thực Đơn</span>
+          <span data-zh>查看菜单</span>
+          <span data-ko>메뉴 보기</span>
+          <span data-es>Ver Menú</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ PHOTO STRIP ══════════════════════════════════════ -->
+<div class="photo-strip" aria-label="Gallery of dishes at Snackie Viet" role="img">
+  <div class="strip-item">
+    <img src="images/strip-01.png" alt="Crispy pork belly with garlic fish sauce" onerror="this.style.display='none'">
+  </div>
+  <div class="strip-item">
+    <img src="images/strip-02.png" alt="Vietnamese rice paper salad (bánh tráng trộn)" onerror="this.style.display='none'">
+  </div>
+  <div class="strip-item">
+    <img src="images/strip-03.png" alt="Lemongrass pork belly rice (cơm ba rọi sả)" onerror="this.style.display='none'">
+  </div>
+  <div class="strip-item">
+    <img src="images/strip-04.png" alt="Vietnamese iced coffee and drinks" onerror="this.style.display='none'">
+  </div>
+</div>
+
+
+<!-- ══ AI DEF ══════════════════════════════════════════ -->
+<div class="ai-def-section" aria-label="About Snackie Viet">
+  <div class="ai-def-inner">
+    <span class="ai-def-label">About this restaurant</span>
+    <p class="ai-def-text">
+      Snackie Viet is a <em>Vietnamese street food restaurant</em> at 141 N Plano Rd, Richardson, TX, specializing in authentic snacks, rice dishes, and drinks — walk-ins welcome, open Mon–Wed &amp; Fri–Sun.
+    </p>
+  </div>
+</div>
+
+
+<!-- ══ FEATURES ══════════════════════════════════════════ -->
+<section class="features" id="features">
+  <div class="section-header">
+    <div class="section-label" aria-hidden="true">Why guests keep coming back</div>
+    <h2 class="section-title">
+      Street food that's <em>hard to find</em><br>anywhere else in DFW
+    </h2>
+  </div>
+
+  <div class="features-grid">
+    <!-- Card 1 -->
+    <article class="feature-card">
+      <div class="feature-img-wrap">
+        <img src="images/feature-01.png" alt="Authentic Vietnamese street snacks" onerror="this.style.display='none'">
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon" aria-hidden="true">🌿</div>
+        <h3 class="feature-title">
+          <span data-en>Dishes You Won't Find Next Door</span>
+          <span data-vi>Món Ăn Độc Đáo</span>
+          <span data-zh>别处找不到的美食</span>
+          <span data-ko>다른 곳에서 찾기 어려운 음식</span>
+          <span data-es>Platos que no encontrarás en otro lugar</span>
+        </h3>
+        <p class="feature-text">
+          <span data-en>From bánh tráng trộn (Vietnamese rice paper salad) to chân gà sốt Thái (chicken feet in Thai sauce), Snackie Viet's menu goes far beyond pho. These are the snacks and bites that Vietnamese families actually eat — now available right here in Richardson.</span>
+          <span data-vi>Từ bánh tráng trộn đến chân gà sốt Thái, thực đơn của Snackie Viet vượt xa hơn phở. Đây là những món ăn vặt mà gia đình Việt thực sự thưởng thức — nay có ngay tại Richardson.</span>
+          <span data-zh>从越南米纸沙拉到泰式鸡爪，Snackie Viet的菜单远不止河粉。这些是越南家庭真正喜爱的小吃——就在Richardson等你来品尝。</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+          <span data-ko>반짱쫀부터 태국식 닭발까지, Snackie Viet의 메뉴는 쌀국수를 훨씬 넘어섭니다. 베트남 가족들이 실제로 즐겨 먹는 간식들을 Richardson에서 만나보세요.</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+          <span data-es>Desde ensalada de papel de arroz hasta patas de pollo en salsa thai, el menú va mucho más allá del pho. Son los bocados que las familias vietnamitas realmente comen — disponibles aquí en Richardson.</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+        </p>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="feature-card">
+      <div class="feature-img-wrap">
+        <img src="images/feature-02.png" alt="Vietnamese drinks — boba, coffee, and seasonal specials" onerror="this.style.display='none'">
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon" aria-hidden="true">☕</div>
+        <h3 class="feature-title">
+          <span data-en>Drinks That Steal the Show</span>
+          <span data-vi>Đồ Uống Đặc Sắc</span>
+          <span data-zh>令人难忘的饮品</span>
+          <span data-ko>특별한 음료들</span>
+          <span data-es>Bebidas que roban el show</span>
+        </h3>
+        <p class="feature-text">
+          <span data-en>Coconut coffee paradise, peach lemongrass tea, classic Vietnamese iced coffee with condensed milk — the drinks menu is as creative as the food. Guests consistently say the drinks alone are worth the trip. Fresh, seasonal, and made to order every time.</span>
+          <span data-vi>Cà phê dừa thiên đường, trà đào sả, cà phê sữa đá truyền thống — thực đơn đồ uống sáng tạo không kém món ăn. Khách hàng luôn nói rằng chỉ riêng đồ uống đã đáng để đến.</span>
+          <span data-zh>椰子咖啡天堂、桃子柠檬草茶、经典越南冰咖啡——饮品菜单与食物一样富有创意。许多顾客说光是饮品就值得专程来一趟。</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+          <span data-ko>코코넛 커피 파라다이스, 복숭아 레몬그라스 차, 클래식 베트남 아이스커피 — 음료 메뉴도 음식만큼 창의적입니다. 음료만을 위해 방문할 가치가 있다는 리뷰가 많습니다.</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+          <span data-es>Café de coco paraíso, té de limoncillo y durazno, café vietnamita con leche condensada — el menú de bebidas es tan creativo como la comida. Muchos dicen que solo las bebidas ya valen la visita.</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+        </p>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="feature-card">
+      <div class="feature-img-wrap">
+        <img src="images/feature-03.png" alt="Cozy Vietnamese-inspired interior decor" onerror="this.style.display='none'">
+      </div>
+      <div class="feature-body">
+        <div class="feature-icon" aria-hidden="true">🏮</div>
+        <h3 class="feature-title">
+          <span data-en>A Corner of Vietnam in Richardson</span>
+          <span data-vi>Một Góc Việt Nam tại Richardson</span>
+          <span data-zh>Richardson中的越南一角</span>
+          <span data-ko>Richardson 속 베트남 한 켠</span>
+          <span data-es>Un rincón de Vietnam en Richardson</span>
+        </h3>
+        <p class="feature-text">
+          <span data-en>Cheerful decorations, warm staff, and a vibe that feels like a neighborhood spot back in Saigon. Whether it's your first visit or your fifteenth, the cozy atmosphere makes it easy to settle in, share a few plates, and stay a while. Reviews consistently mention: "It feels like home."</span>
+          <span data-vi>Trang trí vui tươi, nhân viên thân thiện và không khí như một quán quen ở Sài Gòn. Dù là lần đầu hay lần thứ mười lăm, không gian ấm áp khiến bạn dễ dàng ngồi lại, chia sẻ vài đĩa và ở lại lâu hơn.</span>
+          <span data-zh>欢快的装饰、热情的员工、让人感觉像回到西贡街头小店的氛围。不管是第一次还是第十五次到访，温馨的环境让人舒适地坐下来分享几盘菜，多待一会儿。</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+          <span data-ko>화사한 장식, 따뜻한 직원들, 사이공 동네 가게 같은 분위기. 처음 방문이든 열다섯 번째든, 아늑한 공간에서 여러 접시를 나눠 먹으며 오래 머물게 됩니다. 리뷰마다 "집 같은 느낌"이라는 말이 빠지지 않습니다.</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+          <span data-es>Decoración alegre, personal cálido y una vibra que recuerda a un local del barrio en Saigón. Sea tu primera o tu decimoquinta visita, el ambiente acogedor invita a quedarse, compartir platos y disfrutar.</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!-- ══ MENU HIGHLIGHTS ══════════════════════════════════ -->
+<section class="menu-section" id="menu">
+  <div class="section-header">
+    <div class="section-label">
+      <span data-en>Menu Highlights</span>
+      <span data-vi>Món Nổi Bật</span>
+      <span data-zh>招牌菜</span>
+      <span data-ko>메뉴 하이라이트</span>
+      <span data-es>Lo Mejor del Menú</span>
+    </div>
+    <h2 class="section-title">
+      <span data-en>Street snacks. Real flavors. Everyday cravings.</span>
+      <span data-vi>Ăn vặt đường phố. Hương vị thật. Thèm ăn mỗi ngày.</span>
+      <span data-zh>街头小吃。真实口味。日常渴望。</span>
+      <span data-ko>길거리 간식. 진짜 맛. 매일의 갈망.</span>
+      <span data-es>Snacks callejeros. Sabores reales. Antojos de cada día.</span>
+    </h2>
+  </div>
+
+  <div class="menu-grid">
+    <!-- Item 1 -->
+    <article class="menu-card">
+      <div class="menu-img-wrap">
+        <img src="images/menu-pork-belly.png" alt="Crispy pork belly with garlic fish sauce" onerror="this.style.display='none'">
+      </div>
+      <div class="menu-body">
+        <div class="menu-category">Snacks · S-series</div>
+        <h3 class="menu-name">Crispy Pork Belly</h3>
+        <p class="menu-desc">Golden crunchy outside, tender inside — served with rich garlic fish sauce. The dish that keeps guests coming back for more.</p>
+      </div>
+    </article>
+
+    <!-- Item 2 -->
+    <article class="menu-card">
+      <div class="menu-img-wrap">
+        <img src="images/menu-rice-paper.png" alt="Vietnamese rice paper salad (bánh tráng trộn)" onerror="this.style.display='none'">
+      </div>
+      <div class="menu-body">
+        <div class="menu-category">Snacks · S1</div>
+        <h3 class="menu-name">Bánh Tráng Trộn</h3>
+        <p class="menu-desc">Rice paper salad with a medley of toppings — tangy, spicy, umami-packed. A beloved Vietnamese street snack rarely found outside Vietnam.</p>
+      </div>
+    </article>
+
+    <!-- Item 3 -->
+    <article class="menu-card">
+      <div class="menu-img-wrap">
+        <img src="images/menu-lemongrass-rice.png" alt="Lemongrass pork belly rice" onerror="this.style.display='none'">
+      </div>
+      <div class="menu-body">
+        <div class="menu-category">Rice · E-series</div>
+        <h3 class="menu-name">Lemongrass Pork Belly Rice</h3>
+        <p class="menu-desc">Fragrant jasmine rice topped with caramelized lemongrass pork — bold flavors, comforting texture. One of the most-ordered dishes on the menu.</p>
+      </div>
+    </article>
+
+    <!-- Item 4 -->
+    <article class="menu-card">
+      <div class="menu-img-wrap">
+        <img src="images/menu-drinks.png" alt="Vietnamese coconut coffee and drinks" onerror="this.style.display='none'">
+      </div>
+      <div class="menu-body">
+        <div class="menu-category">Drinks</div>
+        <h3 class="menu-name">Coconut Coffee Paradise</h3>
+        <p class="menu-desc">Vietnamese iced coffee blended with fresh coconut — creamy, bold, and refreshing. A fan favorite that guests describe as "amazing" on every visit.</p>
+      </div>
+    </article>
+  </div>
+
+  <div style="text-align:center;margin-top:48px;">
+    <a href="https://www.doordash.com/store/snackie-viet-26274838/" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex;">
+      <span data-en>Full Menu on DoorDash →</span>
+      <span data-vi>Xem Đầy Đủ Trên DoorDash →</span>
+      <span data-zh>在DoorDash查看完整菜单 →</span>
+      <span data-ko>DoorDash에서 전체 메뉴 보기 →</span>
+      <span data-es>Menú Completo en DoorDash →</span>
+    </a>
+  </div>
+</section>
+
+
+<!-- ══ STORY ══════════════════════════════════════════════ -->
+<section class="story" id="story">
+  <div class="story-inner">
+    <div class="story-img-wrap">
+      <img src="images/story.png" alt="Snackie Viet restaurant interior and atmosphere" onerror="this.style.display='none'">
+    </div>
+    <div class="story-content">
+      <div class="section-label">
+        <span data-en>Our Story</span>
+        <span data-vi>Câu Chuyện Của Chúng Tôi</span>
+        <span data-zh>我们的故事</span>
+        <span data-ko>우리의 이야기</span>
+        <span data-es>Nuestra Historia</span>
+      </div>
+      <h2 class="story-title">
+        <span data-en>The snacks that remind you of <em>home</em></span>
+        <span data-vi>Những món ăn nhắc nhở bạn về <em>quê nhà</em></span>
+        <span data-zh>那些让你想起<em>家乡</em>的味道</span>
+        <span data-ko><em>고향</em>을 떠올리게 하는 그 간식들</span>
+        <span data-es>Los snacks que te recuerdan al <em>hogar</em></span>
+      </h2>
+      <p class="story-text">
+        <span data-en>Snackie Viet was born from a simple idea: bring the street food of Vietnam — the kind sold from carts, wrapped in newspaper, eaten standing up — to Richardson, Texas. Not just pho. Not just spring rolls. The full experience.</span>
+        <span data-vi>Snackie Viet ra đời từ một ý tưởng đơn giản: mang ẩm thực đường phố Việt Nam — loại bán từ xe đẩy, gói trong tờ báo, ăn đứng — đến Richardson, Texas. Không chỉ phở, không chỉ chả giò. Mà là trải nghiệm đầy đủ.</span>
+        <span data-zh>Snackie Viet源于一个简单的想法：将越南街头美食——那种从小推车上售卖、用报纸包裹、站着吃的食物——带到德克萨斯州的Richardson。不只是河粉，不只是春卷，而是完整的体验。</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+        <span data-ko>Snackie Viet은 단순한 아이디어에서 탄생했습니다. 베트남 길거리 음식 — 포장마차에서 팔고, 신문지에 싸서, 서서 먹던 그 음식 — 을 텍사스 Richardson에 가져오는 것. 쌀국수만이 아니라 완전한 경험을.</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+        <span data-es>Snackie Viet nació de una idea simple: traer la comida callejera de Vietnam — la que se vende en carretillas, envuelta en periódico, comida de pie — a Richardson, Texas. No solo pho. No solo rollitos. La experiencia completa.</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+      </p>
+      <blockquote class="story-highlight">
+        <span data-en>"It feels like home. The decorations, the food, everything — I love this place."</span>
+        <span data-vi>"Cảm giác như ở nhà vậy. Trang trí, đồ ăn, tất cả mọi thứ — tôi yêu nơi này."</span>
+        <span data-zh>"感觉就像家一样。装饰、食物、一切——我爱这个地方。"</span>
+        <span data-ko>"집 같은 느낌이에요. 인테리어, 음식, 모든 것 — 이 곳이 정말 좋아요."</span>
+        <span data-es>"Se siente como en casa. Las decoraciones, la comida, todo — amo este lugar."</span>
+        <br>— Google Review
+      </blockquote>
+      <p class="story-text">
+        <span data-en>Every dish is made to order. Every ingredient is chosen for flavor, not convenience. And every guest — whether it's their first visit or their fiftieth — is treated like a regular.</span>
+        <span data-vi>Mỗi món đều được làm theo order. Mỗi nguyên liệu được chọn vì hương vị, không phải sự tiện lợi. Và mỗi vị khách — dù là lần đầu hay lần thứ năm mươi — đều được chào đón như khách quen.</span>
+        <span data-zh>每道菜都是按订单现做。每种食材都因风味而选择，而非方便。每位客人——无论是第一次还是第五十次光顾——都被当作老顾客对待。</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+        <span data-ko>모든 요리는 주문 즉시 만들어집니다. 모든 재료는 편의가 아닌 맛을 위해 선택됩니다. 그리고 모든 손님은 — 첫 방문이든 50번째든 — 단골처럼 맞이합니다.</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+        <span data-es>Cada plato se prepara al momento. Cada ingrediente se elige por su sabor, no por conveniencia. Y cada cliente — sea su primera o su quincuagésima visita — es recibido como un habitual.</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ REVIEWS ══════════════════════════════════════════ -->
+<section class="reviews" id="reviews">
+  <div class="section-header" style="max-width:1200px;margin:0 auto var(--sp-8);">
+    <div class="section-label">
+      <span data-en>What Guests Are Saying</span>
+      <span data-vi>Khách Hàng Nói Gì</span>
+      <span data-zh>顾客评价</span>
+      <span data-ko>손님들의 이야기</span>
+      <span data-es>Lo Que Dicen los Clientes</span>
+    </div>
+    <h2 class="section-title">4.9 stars on Google · 168 reviews on Yelp</h2>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I haven't had Vietnamese street food in a while and this place did not disappoint. I got Bắp Xào, Bánh Mì Nướng, and Chè Thái with Durian. The price is decent and they give you a lot of food."</p>
+      <div class="review-author">Khanh T.</div>
+      <div class="review-source">Yelp — June 2025</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Euphoric bliss is the word I use to describe how delicious the food is here. If you want anything that is equally refreshing and savory, order any of the lemongrass dishes."</p>
+      <div class="review-author">Mary V.</div>
+      <div class="review-source">Yelp — June 2025</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"First time coming here… feels like home! I love the decorations and the variety of food they offer! Many lovely choices and great in taste, very recommend for any Viets who's looking for a taste of home!"</p>
+      <div class="review-author">Google Review</div>
+      <div class="review-source">Google — 2025</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ HOURS & MAP ══════════════════════════════════════ -->
+<section class="hours-map" id="hours">
+  <div class="hours-map-inner">
+    <div>
+      <div class="section-label">
+        <span data-en>Hours &amp; Location</span>
+        <span data-vi>Giờ Mở Cửa &amp; Địa Điểm</span>
+        <span data-zh>营业时间与地址</span>
+        <span data-ko>영업시간 & 위치</span>
+        <span data-es>Horario y Ubicación</span>
+      </div>
+      <h2 class="section-title">
+        <span data-en>Find Us in Richardson</span>
+        <span data-vi>Tìm Chúng Tôi tại Richardson</span>
+        <span data-zh>在Richardson找到我们</span>
+        <span data-ko>Richardson에서 만나요</span>
+        <span data-es>Encuéntranos en Richardson</span>
+      </h2>
+
+      <div class="hours-table" role="table" aria-label="Opening hours">
+        <div class="hours-row">
+          <span class="hours-day">Monday</span>
+          <span class="hours-time">11:00 AM – 10:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Tuesday</span>
+          <span class="hours-time">11:00 AM – 10:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Wednesday</span>
+          <span class="hours-time">11:00 AM – 10:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Thursday</span>
+          <span class="hours-time closed">Closed</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Friday</span>
+          <span class="hours-time">11:00 AM – 11:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Saturday</span>
+          <span class="hours-time">11:00 AM – 11:00 PM</span>
+        </div>
+        <div class="hours-row">
+          <span class="hours-day">Sunday</span>
+          <span class="hours-time">11:00 AM – 10:00 PM</span>
+        </div>
+      </div>
+
+      <div class="hours-address">
+        <p>
+          <strong>141 N Plano Rd, Richardson, TX 75081</strong><br>
+          📞 <a href="tel:2142145537" style="color:var(--terra-lt);">(214) 214-5537</a><br>
+          Parking available in the shopping center lot
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="map-wrap">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-96.7215%2C32.9453%2C-96.7115%2C32.9513&amp;layer=mapnik&amp;marker=32.9483%2C-96.7165"
+          width="100%"
+          height="350"
+          style="border:0;border-radius:4px;"
+          loading="lazy"
+          title="Snackie Viet — 141 N Plano Rd, Richardson TX"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <p class="map-link-row">
+        <a href="https://maps.google.com/?q=Snackie+Viet+141+N+Plano+Rd+Richardson+TX" target="_blank" rel="noopener" class="map-link">Get Directions on Google Maps →</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FAQ ══════════════════════════════════════════════ -->
+<section class="faq" id="faq">
+  <div class="faq-inner">
+    <div class="section-header" style="margin-bottom:0;">
+      <div class="section-label">
+        <span data-en>Frequently Asked Questions</span>
+        <span data-vi>Câu Hỏi Thường Gặp</span>
+        <span data-zh>常见问题</span>
+        <span data-ko>자주 묻는 질문</span>
+        <span data-es>Preguntas Frecuentes</span>
+      </div>
+      <h2 class="section-title">
+        <span data-en>Everything you need to know</span>
+        <span data-vi>Mọi thứ bạn cần biết</span>
+        <span data-zh>您需要了解的一切</span>
+        <span data-ko>알고 싶은 모든 것</span>
+        <span data-es>Todo lo que necesitas saber</span>
+      </h2>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" aria-expanded="false">
+          What are Snackie Viet's hours?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">Mon–Wed 11am–10pm, Thursday closed, Fri–Sat 11am–11pm, Sunday 11am–10pm. Hours may vary on holidays — call (214) 214-5537 to confirm.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" aria-expanded="false">
+          Where is Snackie Viet located, and is there parking?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">141 N Plano Rd, Richardson, TX 75081. Free parking is available in the shopping center lot directly in front of the restaurant.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" aria-expanded="false">
+          Do I need a reservation?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">No reservation is needed — walk-ins are always welcome. For larger groups (6+), calling ahead is appreciated to make sure seating is available.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" aria-expanded="false">
+          Is takeout and delivery available?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">Yes! Takeout is available by calling (214) 214-5537. Delivery is available through DoorDash — search "Snackie Viet" or use the link on this page.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" aria-expanded="false">
+          What kind of food does Snackie Viet serve?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">Snackie Viet specializes in Vietnamese street snacks and drinks that go well beyond the usual pho and spring rolls. Think bánh tráng trộn (rice paper salad), chân gà sốt Thái (chicken feet in Thai sauce), crispy pork belly rice, garlic fried chicken, grilled bánh mì, Vietnamese iced coffee, seasonal boba drinks, and more.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" aria-expanded="false">
+          Are there vegetarian options?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">Yes — several items on the menu are vegetarian-friendly, including corn dishes, rice paper salad, and select drinks. Please ask the staff for current vegetarian options as the menu changes seasonally.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" aria-expanded="false">
+          Can you accommodate large groups or parties?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">Snackie Viet can accommodate groups. For parties of 6 or more, please call (214) 214-5537 in advance so the team can prepare seating for your group.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" aria-expanded="false">
+          How much does a meal cost?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">Snackie Viet is budget-friendly. Most snacks and small plates range from $5–$12, and rice dishes are typically $10–$15. Average spend per person is $12–$20, making it easy to order several items and sample the menu.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" aria-expanded="false">
+          Is Snackie Viet family-friendly?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">Absolutely. The casual, lively atmosphere is welcoming for families and all ages. The wide variety of dishes — from mild rice plates to adventurous snacks — means there's something for everyone at the table.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-btn" aria-expanded="false">
+          What makes Snackie Viet different from other Vietnamese restaurants in DFW?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer">Most Vietnamese restaurants in DFW focus on pho, vermicelli bowls, and banh mi. Snackie Viet specializes in Vietnamese street snacks that are hard to find outside Vietnam — bánh tráng trộn, chân gà, bắp xào, and creative seasonal drinks. If you want to explore beyond the usual Vietnamese menu, this is the place.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ CONTACT ══════════════════════════════════════════ -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <div>
+      <div class="section-label">
+        <span data-en>Get In Touch</span>
+        <span data-vi>Liên Hệ</span>
+        <span data-zh>联系我们</span>
+        <span data-ko>문의하기</span>
+        <span data-es>Contáctanos</span>
+      </div>
+      <h2 class="section-title">
+        <span data-en>Questions? Catering? Group bookings?</span>
+        <span data-vi>Câu hỏi? Cung cấp ẩm thực? Đặt nhóm?</span>
+        <span data-zh>有问题？团体预订？外宴？</span>
+        <span data-ko>문의, 케이터링, 단체 예약?</span>
+        <span data-es>¿Preguntas? ¿Catering? ¿Grupos?</span>
+      </h2>
+      <p class="contact-sub">
+        <span data-en>Reach out any time. We're happy to help with group bookings, catering inquiries, and general questions. Or just call — (214) 214-5537.</span>
+        <span data-vi>Liên hệ bất cứ lúc nào. Chúng tôi sẵn sàng hỗ trợ đặt nhóm, yêu cầu cung cấp ẩm thực và câu hỏi chung. Hoặc chỉ cần gọi — (214) 214-5537.</span>
+        <span data-zh>随时联系我们。我们很乐意帮助团体预订、外宴咨询和一般问题。或直接致电 — (214) 214-5537。</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+        <span data-ko>언제든지 연락주세요. 단체 예약, 케이터링 문의, 일반 질문에 기꺼이 도움드리겠습니다. 전화도 가능합니다 — (214) 214-5537.</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+        <span data-es>Contáctanos cuando quieras. Estamos disponibles para reservas grupales, catering y preguntas generales. O simplemente llama — (214) 214-5537.</span><!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+      </p>
+    </div>
+
+    <form class="contact-form" id="contact-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="name">
+            <span data-en>Name</span>
+            <span data-vi>Tên</span>
+            <span data-zh>姓名</span>
+            <span data-ko>이름</span>
+            <span data-es>Nombre</span>
+          </label>
+          <input type="text" id="name" name="name" class="form-input" placeholder="Your name" autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="phone">
+            <span data-en>Phone</span>
+            <span data-vi>Điện Thoại</span>
+            <span data-zh>电话</span>
+            <span data-ko>전화</span>
+            <span data-es>Teléfono</span>
+          </label>
+          <input type="tel" id="phone" name="phone" class="form-input" placeholder="(214) 000-0000" autocomplete="tel">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="inquiry">
+          <span data-en>Inquiry Type</span>
+          <span data-vi>Loại Yêu Cầu</span>
+          <span data-zh>咨询类型</span>
+          <span data-ko>문의 유형</span>
+          <span data-es>Tipo de Consulta</span>
+        </label>
+        <select id="inquiry" name="inquiry" class="form-select">
+          <option value="">Select…</option>
+          <option value="group">Group Booking (6+ people)</option>
+          <option value="catering">Catering Inquiry</option>
+          <option value="general">General Question</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="message">
+          <span data-en>Message</span>
+          <span data-vi>Tin Nhắn</span>
+          <span data-zh>留言</span>
+          <span data-ko>메시지</span>
+          <span data-es>Mensaje</span>
+        </label>
+        <textarea id="message" name="message" class="form-textarea" placeholder="Tell us how we can help…"></textarea>
+      </div>
+      <button type="submit" class="form-submit">
+        <span data-en>Send Message</span>
+        <span data-vi>Gửi Tin Nhắn</span>
+        <span data-zh>发送消息</span>
+        <span data-ko>메시지 보내기</span>
+        <span data-es>Enviar Mensaje</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+
+<!-- ══ FOOTER ══════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">Snackie <em>Viet</em></div>
+    <div class="footer-links">
+      <a href="#menu" class="footer-link">Menu</a>
+      <a href="#hours" class="footer-link">Hours</a>
+      <a href="#faq" class="footer-link">FAQ</a>
+      <a href="#contact" class="footer-link">Contact</a>
+      <a href="https://www.doordash.com/store/snackie-viet-26274838/" target="_blank" rel="noopener" class="footer-link">Order Online</a>
+    </div>
+  </div>
+  <div class="footer-copy">
+    141 N Plano Rd, Richardson, TX 75081 &nbsp;|&nbsp; (214) 214-5537 &nbsp;|&nbsp; © 2025 Snackie Viet. All rights reserved.
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
