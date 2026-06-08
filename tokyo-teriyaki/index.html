@@ -1,1 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokyo Teriyaki | Japanese Lunch Restaurant in Carrollton, TX</title>
+  <meta name="description" content="Tokyo Teriyaki in Carrollton, TX — fresh teriyaki bowls, chicken katsu, yakisoba and more. Lunch Monday–Friday. Takeout and Uber Eats delivery available.">
+  <link rel="canonical" href="https://tokyoteriyakicarrollton.com/">
 
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Tokyo Teriyaki",
+    "description": "Tokyo Teriyaki is a Japanese lunch restaurant in Carrollton, TX, serving fresh teriyaki bowls, chicken katsu, yakisoba, and egg rolls Monday through Friday.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1630 Valwood Pkwy Ste 110",
+      "addressLocality": "Carrollton",
+      "addressRegion": "TX",
+      "postalCode": "75006",
+      "addressCountry": "US"
+    },
+    "telephone": "+19726200211",
+    "servesCuisine": "Japanese",
+    "priceRange": "$",
+    "url": "https://tokyoteriyakicarrollton.com/",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "15:00" }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "491",
+      "bestRating": "5"
+    },
+    "hasMenu": "https://tokyoteriyakicarrollton.com/#menu"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "What are Tokyo Teriyaki's hours?", "acceptedAnswer": { "@type": "Answer", "text": "Monday through Friday, 10:00 AM to 3:00 PM. Closed Saturday and Sunday." } },
+      { "@type": "Question", "name": "Where is Tokyo Teriyaki located?", "acceptedAnswer": { "@type": "Answer", "text": "1630 Valwood Pkwy, Ste 110, Carrollton, TX 75006. Free parking is available in the adjacent lot." } },
+      { "@type": "Question", "name": "Does Tokyo Teriyaki offer takeout?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — call ahead at (972) 620-0211 and your order will be ready when you arrive." } },
+      { "@type": "Question", "name": "Does Tokyo Teriyaki offer delivery?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, delivery is available through Uber Eats." } },
+      { "@type": "Question", "name": "What is on the menu at Tokyo Teriyaki?", "acceptedAnswer": { "@type": "Answer", "text": "Teriyaki bowls (chicken, beef, pork, shrimp, short ribs), chicken katsu, yakisoba, stir fry plates, sushi rolls, egg rolls, and drinks." } },
+      { "@type": "Question", "name": "Does Tokyo Teriyaki have vegetarian options?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — tofu teriyaki, tofu yakisoba, and stir fry tofu are available." } },
+      { "@type": "Question", "name": "Can I order catering from Tokyo Teriyaki?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Call (972) 620-0211 to discuss catering orders." } },
+      { "@type": "Question", "name": "How much does Tokyo Teriyaki cost?", "acceptedAnswer": { "@type": "Answer", "text": "Most plates are under $15, offering excellent value for a Japanese lunch in Carrollton." } },
+      { "@type": "Question", "name": "Is the food freshly made at Tokyo Teriyaki?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Egg rolls are prepared every morning, and all dishes are made to order." } },
+      { "@type": "Question", "name": "Does Tokyo Teriyaki accept credit cards?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, all major credit cards and cash are accepted." } }
+    ]
+  }
+  </script>
+
+  <!-- multi-language note: native review required before publish -->
+  <!-- 多言語テキスト：ネイティブレビュー未了 — 公開前に差し替え要 -->
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">東京<span>·</span>Teriyaki</a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#menu" class="nav-link" data-key="nav-menu">Menu</a></li>
+      <li><a href="#hours" class="nav-link" data-key="nav-hours">Hours</a></li>
+      <li><a href="#contact" class="nav-link" data-key="nav-contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang-switcher" role="group" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="zh">中文</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="ko">한국어</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
+      <a href="tel:+19726200211" class="nav-cta" data-key="nav-order">Order Now</a>
+    </div>
+
+    <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section class="hero" id="home" aria-label="Tokyo Teriyaki hero">
+  <img
+    class="hero-bg-img"
+    src="images/hero.png"
+    alt="Tokyo Teriyaki teriyaki chicken bowl with rice"
+    onerror="this.style.opacity='0'"
+  >
+
+  <div class="hero-content">
+    <p class="hero-eyebrow" data-key="hero-eyebrow">Carrollton, TX · Lunch</p>
+    <div class="hero-kanji" aria-hidden="true">東京</div>
+    <div class="hero-separator" aria-hidden="true"></div>
+
+    <h1 class="hero-h1" data-key="hero-h1">
+      Real Japanese flavors. <strong>Lunch, done right.</strong>
+    </h1>
+    <p class="hero-desc" data-key="hero-desc">
+      Teriyaki, katsu, yakisoba — made fresh, served fast.
+    </p>
+
+    <!-- AI definition — GEO -->
+    <p class="hero-ai-def" aria-hidden="true">
+      Tokyo Teriyaki is a Japanese lunch restaurant in Carrollton, TX, specializing in teriyaki bowls, chicken katsu, and yakisoba — open weekdays for takeout and dine-in.
+    </p>
+
+    <div class="hero-stats" role="group" aria-label="Restaurant ratings">
+      <div class="hero-stat">
+        <span class="stat-num">4.5★</span>
+        <span class="stat-label" data-key="hero-stat-label-1">Google Reviews</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="hero-stat">
+        <span class="stat-num">491</span>
+        <span class="stat-label" data-key="hero-stat-label-1">Google Reviews</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="hero-stat">
+        <span class="stat-num">122</span>
+        <span class="stat-label" data-key="hero-stat-label-2">Yelp Reviews</span>
+      </div>
+    </div>
+
+    <div class="hero-ctas">
+      <a href="tel:+19726200211" class="btn-primary" data-key="hero-cta-1">Order Now</a>
+      <a href="#menu" class="btn-ghost" data-key="hero-cta-2">See Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PHOTO STRIP ═══════════════════════════ -->
+<div class="photo-strip" aria-hidden="true">
+  <div class="strip-item"><img src="images/strip-01.png" alt="Chicken teriyaki bowl" onerror="this.style.display='none'"></div>
+  <div class="strip-item"><img src="images/strip-02.png" alt="Beef teriyaki with rice" onerror="this.style.display='none'"></div>
+  <div class="strip-item"><img src="images/strip-03.png" alt="Chicken katsu plate" onerror="this.style.display='none'"></div>
+  <div class="strip-item"><img src="images/strip-04.png" alt="Yakisoba noodles" onerror="this.style.display='none'"></div>
+</div>
+
+<!-- ═══════════════════════════ MENU ═══════════════════════════ -->
+<section class="section menu-section" id="menu" aria-labelledby="menu-heading">
+  <div class="section-inner">
+    <p class="section-label">What We Serve</p>
+    <h2 class="section-title" id="menu-heading">Made fresh. <em>Every day.</em></h2>
+    <p class="section-sub">Our menu is built around one idea: honest Japanese food at a price that makes sense for lunch. Everything is made to order.</p>
+
+    <div class="menu-grid">
+
+      <article class="menu-card">
+        <img class="menu-card-img" src="images/teriyaki-chicken.png" alt="Chicken Teriyaki bowl" onerror="this.style.display='none'">
+        <div class="menu-card-body">
+          <p class="menu-card-tag">Teriyaki</p>
+          <h3 class="menu-card-name">Chicken Teriyaki</h3>
+          <p class="menu-card-desc">Grilled chicken glazed in our house teriyaki sauce, served over steamed rice with a side of coleslaw. Our most-ordered plate — and for good reason.</p>
+          <span class="menu-card-price">From $10</span>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img class="menu-card-img" src="images/teriyaki-beef.png" alt="Beef Teriyaki bowl" onerror="this.style.display='none'">
+        <div class="menu-card-body">
+          <p class="menu-card-tag">Teriyaki</p>
+          <h3 class="menu-card-name">Beef Teriyaki</h3>
+          <p class="menu-card-desc">Tender beef strips in a rich teriyaki glaze over rice. One guest said it was a "flavor explosion" — we think that's about right.</p>
+          <span class="menu-card-price">From $11</span>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img class="menu-card-img" src="images/chicken-katsu.png" alt="Chicken Katsu plate" onerror="this.style.display='none'">
+        <div class="menu-card-body">
+          <p class="menu-card-tag">Katsu</p>
+          <h3 class="menu-card-name">Chicken Katsu</h3>
+          <p class="menu-card-desc">Breaded, panko-crusted chicken fried until golden and crispy. Served with rice and our homemade coleslaw. A crowd favorite that keeps regulars coming back.</p>
+          <span class="menu-card-price">From $10</span>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img class="menu-card-img" src="images/yakisoba.png" alt="Yakisoba noodles" onerror="this.style.display='none'">
+        <div class="menu-card-body">
+          <p class="menu-card-tag">Noodles</p>
+          <h3 class="menu-card-name">Yakisoba</h3>
+          <p class="menu-card-desc">Stir-fried Japanese noodles with your choice of protein — chicken, shrimp, or tofu. Tossed with vegetables and our savory sauce for a satisfying lunch.</p>
+          <span class="menu-card-price">From $10</span>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img class="menu-card-img" src="images/short-ribs.png" alt="Short Ribs Teriyaki" onerror="this.style.display='none'">
+        <div class="menu-card-body">
+          <p class="menu-card-tag">Specialty</p>
+          <h3 class="menu-card-name">Short Ribs Teriyaki</h3>
+          <p class="menu-card-desc">Our premium plate. Slow-cooked beef short ribs finished in teriyaki glaze — rich, tender, and deeply satisfying. Perfect for when you want something extra.</p>
+          <span class="menu-card-price">From $13</span>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <img class="menu-card-img" src="images/egg-rolls.png" alt="Fresh egg rolls" onerror="this.style.display='none'">
+        <div class="menu-card-body">
+          <p class="menu-card-tag">Sides</p>
+          <h3 class="menu-card-name">Egg Rolls</h3>
+          <p class="menu-card-desc">Made fresh every morning and fried to order — hot, crispy, and packed with flavor. A perfect starter or addition to any plate. Ask about our tofu options too.</p>
+          <span class="menu-card-price">From $3</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FEATURES ═══════════════════════════ -->
+<section class="section" aria-labelledby="features-heading">
+  <div class="section-inner">
+    <p class="section-label">Why Tokyo Teriyaki</p>
+    <h2 class="section-title" id="features-heading">The kind of lunch <em>you'll come back to.</em></h2>
+
+    <div class="features-grid">
+
+      <div class="feature-card">
+        <div class="feature-img-wrap">
+          <img src="images/strip-01.png" alt="Fresh teriyaki" onerror="this.style.display='none'">
+        </div>
+        <h3>Made to order, every time</h3>
+        <p>Nothing sits under a lamp here. When you order, we cook. That means your chicken is hot, your rice is fresh, and your coleslaw is crisp — every single visit. It's not faster food, it's real food done right.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-img-wrap">
+          <img src="images/strip-02.png" alt="Generous portions" onerror="this.style.display='none'">
+        </div>
+        <h3>Generous portions, honest prices</h3>
+        <p>Most plates come in under $15. But that doesn't mean small portions — our regulars come back because they leave full and satisfied. Great value for a weekday lunch without compromising on quality or taste.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-img-wrap">
+          <img src="images/strip-03.png" alt="Friendly service" onerror="this.style.display='none'">
+        </div>
+        <h3>A team that knows your name</h3>
+        <p>We've been told we remember what our regulars order before they even finish saying hello. That's not an accident — it's the kind of place we want to be. A neighborhood lunch spot where you're treated like family, not a number.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ REVIEWS ═══════════════════════════ -->
+<section class="section reviews-section" aria-labelledby="reviews-heading">
+  <div class="section-inner">
+    <p class="section-label">What Guests Say</p>
+    <h2 class="section-title" id="reviews-heading">491 reviews. <em>4.5 stars.</em></h2>
+
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="review-text">"Great food, fast service, friendly employees. Highly recommended — nothing more needs to be said."</p>
+        <p class="review-author">Kevin M.</p>
+        <p class="review-source">Google · October 2025</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="review-text">"Great prices, amazing taste. Very simple dish but it hits the spot every time. Very fast service, clean environment."</p>
+        <p class="review-author">Brayan M.</p>
+        <p class="review-source">Yelp · February 2024</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="review-text">"Flavor explosion in your mouth. I got the #9 — beef and chicken teriyaki. Amazing! My wife got the beef teriyaki. We were both blown away."</p>
+        <p class="review-author">Lundy M.</p>
+        <p class="review-source">Yelp · October 2023</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ HOURS + MAP ═══════════════════════════ -->
+<section class="section hours-map-section" id="hours" aria-labelledby="hours-heading">
+  <div class="section-inner">
+    <p class="section-label">Find Us</p>
+    <h2 class="section-title" id="hours-heading">Hours &amp; <em>Location</em></h2>
+
+    <div class="hours-map-grid">
+      <div>
+        <div class="hours-block">
+          <h3>Opening Hours</h3>
+          <div class="hours-row"><span class="day">Monday</span><span class="time">10:00 AM – 3:00 PM</span></div>
+          <div class="hours-row"><span class="day">Tuesday</span><span class="time">10:00 AM – 3:00 PM</span></div>
+          <div class="hours-row"><span class="day">Wednesday</span><span class="time">10:00 AM – 3:00 PM</span></div>
+          <div class="hours-row"><span class="day">Thursday</span><span class="time">10:00 AM – 3:00 PM</span></div>
+          <div class="hours-row"><span class="day">Friday</span><span class="time">10:00 AM – 3:00 PM</span></div>
+          <div class="hours-row"><span class="day">Saturday</span><span class="time closed">Closed</span></div>
+          <div class="hours-row"><span class="day">Sunday</span><span class="time closed">Closed</span></div>
+          <p class="hours-note">Last orders taken approx. 15 min before close.</p>
+        </div>
+
+        <div class="contact-block">
+          <div class="contact-item">
+            <span>📍</span>
+            <span>1630 Valwood Pkwy Ste 110, Carrollton, TX 75006</span>
+          </div>
+          <div class="contact-item">
+            <span>📞</span>
+            <a href="tel:+19726200211">(972) 620-0211</a>
+          </div>
+          <div class="contact-item">
+            <span>🚗</span>
+            <span>Free parking in adjacent lot</span>
+          </div>
+          <div class="contact-item">
+            <span>🛵</span>
+            <span>Delivery via Uber Eats</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-wrap">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-96.9035%2C32.9565%2C-96.8935%2C32.9625&amp;layer=mapnik&amp;marker=32.9595%2C-96.8985"
+          width="100%"
+          height="380"
+          style="border:0;border-radius:8px;"
+          loading="lazy"
+          title="Tokyo Teriyaki — 1630 Valwood Pkwy, Carrollton TX"
+          allowfullscreen>
+        </iframe>
+        <a
+          href="https://maps.google.com/?q=Tokyo+Teriyaki+1630+Valwood+Pkwy+Carrollton+TX"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="map-link"
+        >Get Directions on Google Maps →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FAQ ═══════════════════════════ -->
+<section class="section faq-section" id="faq" aria-labelledby="faq-heading">
+  <div class="section-inner">
+    <p class="section-label">Questions</p>
+    <h2 class="section-title" id="faq-heading">Everything you <em>need to know.</em></h2>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" data-key="faq-q1" aria-expanded="false">What are your hours?</button>
+        <div class="faq-answer" data-key="faq-a1">Monday through Friday, 10:00 AM – 3:00 PM. We are closed on Saturday and Sunday.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" data-key="faq-q2" aria-expanded="false">Where are you located? Is there parking?</button>
+        <div class="faq-answer" data-key="faq-a2">We are at 1630 Valwood Pkwy, Ste 110, Carrollton, TX 75006. Free parking is available in the adjacent lot.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" data-key="faq-q3" aria-expanded="false">Do you offer takeout?</button>
+        <div class="faq-answer" data-key="faq-a3">Yes — takeout is our specialty. Call ahead at (972) 620-0211 and your order will be ready when you arrive.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" data-key="faq-q4" aria-expanded="false">Do you offer delivery?</button>
+        <div class="faq-answer" data-key="faq-a4">Yes, we are available on Uber Eats for delivery to nearby areas.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" data-key="faq-q5" aria-expanded="false">What is on the menu?</button>
+        <div class="faq-answer" data-key="faq-a5">We serve teriyaki bowls (chicken, beef, pork, shrimp, short ribs), chicken katsu, yakisoba, stir fry plates, sushi rolls, egg rolls, and more.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" data-key="faq-q6" aria-expanded="false">Do you have vegetarian options?</button>
+        <div class="faq-answer" data-key="faq-a6">Yes — we offer tofu teriyaki, tofu yakisoba, stir fry tofu, and vegetable-friendly sides.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" data-key="faq-q7" aria-expanded="false">Can I order for a large group or catering?</button>
+        <div class="faq-answer" data-key="faq-a7">Yes, we welcome catering orders. Call us at (972) 620-0211 to discuss your needs and we will be happy to accommodate.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" data-key="faq-q8" aria-expanded="false">Are your prices affordable?</button>
+        <div class="faq-answer" data-key="faq-a8">We pride ourselves on generous portions at honest prices. Most plates are under $15, making us one of the best-value Japanese lunches in Carrollton.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" data-key="faq-q9" aria-expanded="false">Is the food freshly prepared?</button>
+        <div class="faq-answer" data-key="faq-a9">Yes. Everything is made fresh daily — our egg rolls are prepared every morning and our dishes are made to order.</div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" data-key="faq-q10" aria-expanded="false">Do you accept credit cards?</button>
+        <div class="faq-answer" data-key="faq-a10">Yes, we accept all major credit cards as well as cash.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+<section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+  <div class="section-inner">
+    <p class="section-label" data-key="contact-label">Contact Us</p>
+    <h2 class="section-title" id="contact-heading" data-key="contact-title">Let's make your lunch great.</h2>
+    <p class="section-sub" data-key="contact-sub">Catering inquiries, questions, or just want to say hi — we'd love to hear from you.</p>
+
+    <div class="contact-form" role="form" aria-label="Contact form">
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label" for="contact-name">Name</label>
+          <input class="form-input" type="text" id="contact-name" name="name" placeholder="Your name" autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="contact-phone">Phone</label>
+          <input class="form-input" type="tel" id="contact-phone" name="phone" placeholder="(XXX) XXX-XXXX" autocomplete="tel">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="contact-subject">Subject</label>
+        <select class="form-select" id="contact-subject" name="subject">
+          <option value="">Select a topic…</option>
+          <option value="catering">Catering Inquiry</option>
+          <option value="order">Pre-Order Question</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="contact-message">Message</label>
+        <textarea class="form-textarea" id="contact-message" name="message" placeholder="Tell us how we can help…"></textarea>
+      </div>
+      <button class="btn-submit" type="button">Send Message →</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">東京<span>·</span>Teriyaki</div>
+      <p class="footer-tagline">Japanese lunch in Carrollton, TX.<br>Teriyaki, katsu, yakisoba — made fresh every day.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <h4>Quick Links</h4>
+      <ul role="list">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#hours">Hours &amp; Location</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact / Catering</a></li>
+      </ul>
+    </nav>
+    <div class="footer-nav">
+      <h4>Contact</h4>
+      <ul role="list">
+        <li><a href="tel:+19726200211">(972) 620-0211</a></li>
+        <li>1630 Valwood Pkwy Ste 110</li>
+        <li>Carrollton, TX 75006</li>
+        <li>Mon–Fri 10:00 AM – 3:00 PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Tokyo Teriyaki, Carrollton TX</span>
+    <span>Web design by <a href="mailto:unadallastexas@gmail.com" style="color:inherit;text-decoration:underline;">UNA Consulting</a></span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
