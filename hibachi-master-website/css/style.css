@@ -1,28 +1,33 @@
 /* ============================================================
    HIBACHI MASTER — style.css
-   Palette: Ember / Charcoal / Cream / Gold
-   Font: Bebas Neue (display) + DM Sans (body)
+   Palette: Navy / Red / Gold / Cream  (actual truck signage)
+   Font: Edo SZ (display/accent) + DM Sans (body)
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/edo-sz');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
 
 :root {
-  /* Colors — OKLCH */
-  --ember:       oklch(55% 0.22 40);    /* deep orange-red */
-  --ember-dark:  oklch(40% 0.20 35);
-  --ember-light: oklch(70% 0.18 50);
-  --gold:        oklch(72% 0.14 80);
-  --gold-light:  oklch(84% 0.11 88);
-  --charcoal:    oklch(16% 0.01 260);
-  --charcoal-mid:oklch(24% 0.01 260);
+  /* Colors — OKLCH
+     --ember    = brand red  (看板レッド)
+     --charcoal = brand navy (看板ネイビー)
+  */
+  --ember:       oklch(42% 0.22 25);    /* brand red  ≈ #c0272d */
+  --ember-dark:  oklch(30% 0.20 22);
+  --ember-light: oklch(58% 0.20 28);
+  --gold:        oklch(72% 0.16 82);    /* sign gold  ≈ #e8a020 */
+  --gold-light:  oklch(84% 0.14 88);
+  --charcoal:    oklch(20% 0.06 255);   /* brand navy ≈ #1a2744 */
+  --charcoal-mid:oklch(27% 0.06 255);
   --cream:       oklch(97% 0.015 85);
   --cream-warm:  oklch(93% 0.025 80);
   --smoke:       oklch(88% 0.015 80);
   --text-main:   oklch(18% 0.01 260);
   --text-muted:  oklch(50% 0.01 260);
 
-  /* Fonts */
-  --font-display: 'Bebas Neue', sans-serif;
+  /* Fonts — Edo SZ matched to truck signage */
+  --font-display: 'Edo SZ', sans-serif;
+  --font-accent:  'Edo SZ', sans-serif;
   --font-body:    'DM Sans', sans-serif;
 
   /* Spacing (8px scale) */
@@ -80,12 +85,25 @@ a  { color: inherit; text-decoration: none; }
 }
 .nav-logo {
   font-family: var(--font-display);
-  font-size: 1.5rem;
-  letter-spacing: 0.06em;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
   color: var(--cream);
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 2px;
 }
-.nav-logo span { color: var(--ember); }
+.nav-logo span { color: var(--gold); }
+.nav-logo-sub {
+  font-family: var(--font-body);
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  opacity: 0.8;
+}
 .nav-links {
   display: flex;
   gap: var(--sp-4);
@@ -214,15 +232,15 @@ a  { color: inherit; text-decoration: none; }
   padding-top: 64px;
 }
 
-/* Fire/smoke background texture */
+/* Navy depth background */
 .hero::before {
   content: '';
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 60% 80% at 80% 50%, oklch(40% 0.22 35 / 0.45) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 60% at 90% 20%, oklch(55% 0.22 55 / 0.25) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 70% at 70% 80%, oklch(30% 0.15 30 / 0.35) 0%, transparent 60%);
+    radial-gradient(ellipse 60% 80% at 80% 50%, oklch(42% 0.22 25 / 0.30) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 60% at 10% 80%, oklch(72% 0.16 82 / 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 50% at 50% 10%, oklch(27% 0.06 255 / 0.6) 0%, transparent 70%);
   z-index: 0;
 }
 
@@ -242,7 +260,7 @@ a  { color: inherit; text-decoration: none; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, var(--charcoal) 0%, oklch(16% 0.01 260 / 0.5) 40%, transparent 100%);
+  background: linear-gradient(to right, var(--charcoal) 0%, oklch(20% 0.06 255 / 0.55) 40%, transparent 100%);
   z-index: 2;
 }
 
@@ -263,12 +281,12 @@ a  { color: inherit; text-decoration: none; }
   max-width: 580px;
 }
 .hero-eyebrow {
-  font-family: var(--font-body);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
+  font-family: var(--font-accent);
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--ember-light);
+  color: var(--gold);
   margin-bottom: var(--sp-3);
   display: flex;
   align-items: center;
@@ -291,8 +309,11 @@ a  { color: inherit; text-decoration: none; }
 }
 .hero-h1 em {
   font-style: normal;
-  color: var(--ember);
+  font-family: var(--font-accent);
+  font-size: 0.85em;
+  color: var(--gold);
   display: block;
+  letter-spacing: 0.03em;
 }
 .hero-sep {
   width: 48px;
@@ -366,7 +387,7 @@ a  { color: inherit; text-decoration: none; }
   border-radius: 2px;
   transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
 }
-.btn-primary:hover { background: var(--ember-dark); transform: translateY(-2px); box-shadow: 0 8px 24px oklch(40% 0.20 35 / 0.4); }
+.btn-primary:hover { background: var(--ember-dark); transform: translateY(-2px); box-shadow: 0 8px 24px oklch(42% 0.22 25 / 0.35); }
 .btn-primary:active { transform: translateY(0); }
 .btn-ghost {
   display: inline-flex;
@@ -471,10 +492,10 @@ a  { color: inherit; text-decoration: none; }
   margin-bottom: var(--sp-8);
 }
 .section-eyebrow {
-  font-family: var(--font-body);
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
+  font-family: var(--font-accent);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--ember);
   margin-bottom: var(--sp-2);
@@ -574,7 +595,7 @@ a  { color: inherit; text-decoration: none; }
   transform: translateY(-50%);
   font-family: var(--font-display);
   font-size: 18vw;
-  color: oklch(20% 0.01 260);
+  color: oklch(24% 0.06 255);
   pointer-events: none;
   user-select: none;
   line-height: 1;
@@ -911,7 +932,7 @@ a  { color: inherit; text-decoration: none; }
 .form-select:focus,
 .form-textarea:focus {
   border-color: var(--ember);
-  box-shadow: 0 0 0 3px oklch(55% 0.22 40 / 0.12);
+  box-shadow: 0 0 0 3px oklch(42% 0.22 25 / 0.15);
 }
 .form-input:disabled,
 .form-select:disabled,
@@ -935,7 +956,7 @@ a  { color: inherit; text-decoration: none; }
   cursor: pointer;
   transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
 }
-.form-submit:hover { background: var(--ember-dark); transform: translateY(-2px); box-shadow: 0 8px 20px oklch(40% 0.20 35 / 0.3); }
+.form-submit:hover { background: var(--ember-dark); transform: translateY(-2px); box-shadow: 0 8px 20px oklch(42% 0.22 25 / 0.28); }
 .form-submit:active { transform: translateY(0); }
 .form-submit:loading { opacity: 0.7; cursor: wait; }
 
@@ -962,11 +983,23 @@ a  { color: inherit; text-decoration: none; }
 }
 .footer-logo {
   font-family: var(--font-display);
-  font-size: 1.6rem;
-  letter-spacing: 0.06em;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
   color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  line-height: 1;
 }
-.footer-logo span { color: var(--ember); }
+.footer-logo span { color: var(--gold); }
+.footer-logo-sub {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: oklch(65% 0.08 82);
+}
 .footer-links {
   display: flex;
   gap: var(--sp-4);
@@ -1000,7 +1033,8 @@ a  { color: inherit; text-decoration: none; }
   justify-content: center;
   gap: var(--sp-3);
   padding: var(--sp-4);
-  background: var(--charcoal-mid);
+  background: oklch(24% 0.07 255);   /* slightly lighter navy */
+  border-top: 3px solid var(--gold);
   flex-wrap: wrap;
 }
 @media (max-width: 480px) {
@@ -1022,7 +1056,7 @@ a  { color: inherit; text-decoration: none; }
 .sns-btn:hover { opacity: 0.85; transform: translateY(-1px); }
 .sns-btn.facebook { background: #1877F2; color: #fff; }
 .sns-btn.phone    { background: var(--ember); color: var(--cream); }
-.sns-btn.order    { background: var(--gold-light); color: var(--charcoal); }
+.sns-btn.order    { background: var(--gold); color: var(--charcoal); }
 
 /* ============================================================
    UTILITY / ANIMATION
