@@ -1,1 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Bếp | Authentic Vietnamese Cuisine & Noodles — Colleyville, TX</title>
+  <meta name="description" content="Daily Bếp is a family-owned Vietnamese restaurant in Colleyville, TX serving fresh pho, bánh mì, spring rolls, vermicelli bowls, and Vietnamese beverages. Dine-in and takeout available. Tue–Sat 11am–9pm." />
 
+  <!-- Schema.org: Restaurant + FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Daily Bếp Vietnamese Cuisine and Noodles House",
+    "description": "Daily Bếp is a family-owned Vietnamese restaurant in Colleyville, TX, specializing in authentic pho, bánh mì sandwiches, vermicelli bowls, and fresh spring rolls.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4620 Colleyville Blvd #108",
+      "addressLocality": "Colleyville",
+      "addressRegion": "TX",
+      "postalCode": "76034"
+    },
+    "telephone": "(682) 325-4350",
+    "email": "Dailybep108@gmail.com",
+    "url": "https://dailybep.com",
+    "servesCuisine": ["Vietnamese"],
+    "priceRange": "$$",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "190"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "11:00", "closes": "21:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Sunday"], "opens": "00:00", "closes": "00:00" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are Daily Bếp's hours?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We are open Tuesday through Saturday, 11:00 AM to 9:00 PM. We are closed on Monday and Sunday." }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is Daily Bếp located?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Daily Bếp is located at 4620 Colleyville Blvd #108, Colleyville, TX 76034. There is free parking in the shopping center lot." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you accept reservations?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We welcome walk-ins — no reservation needed. For large groups of 8 or more, we recommend calling ahead at (682) 325-4350." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer takeout or delivery?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, takeout is available. Please call us at (682) 325-4350 or visit us in person to place your order." }
+      },
+      {
+        "@type": "Question",
+        "name": "What are your most popular dishes?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Our most-loved dishes include the Brisket Pho, Cheese Steak Bánh Mì, Grilled Pork Vermicelli Bowl, Spring Rolls, and our house Vietnamese Milk Coffee. Our pho broth is made fresh from scratch daily." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you have vegetarian options?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes! We offer vegetable pho made with real vegetable broth — not a common find. Please call ahead to confirm current vegetarian options on our menu." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can you accommodate large groups or parties?",
+        "acceptedAnswer": { "@type": "Answer", "text": "We welcome groups. For parties of 8 or more, we recommend calling ahead at (682) 325-4350 so we can prepare for your visit." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer beverages other than soft drinks?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — we have a full drink menu including Vietnamese Iced Coffee, Milk Tea, Boba Tea, and fresh fruit lemonades in Mango, Lychee, and Peach flavors." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the price range at Daily Bếp?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Our bowls and plates range from approximately $13–$16. Drinks are $5–$7. We pride ourselves on generous portions at very fair prices." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Daily Bếp family-owned?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes — Daily Bếp is a small, family-owned and operated restaurant. Everything is made fresh from scratch. You'll feel that in every bowl." }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── NAV ───────────────────────────────────────────────── -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="Daily Bếp home">
+      Daily <span>Bếp</span>
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#menu" class="nav-link" data-en="Menu" data-es="Menú">Menu</a></li>
+      <li><a href="#story" class="nav-link" data-en="Our Story" data-es="Nuestra Historia">Our Story</a></li>
+      <li><a href="#reviews" class="nav-link" data-en="Reviews" data-es="Reseñas">Reviews</a></li>
+      <li><a href="#hours" class="nav-link" data-en="Hours" data-es="Horario">Hours</a></li>
+      <li><a href="#faq" class="nav-link">FAQ</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="es">ES</button>
+      </div>
+      <a href="tel:6823254350" class="nav-cta" data-en="Call Us" data-es="Llámanos">Call Us</a>
+    </div>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="#menu" class="nav-link" data-en="Menu" data-es="Menú">Menu</a>
+  <a href="#story" class="nav-link" data-en="Our Story" data-es="Nuestra Historia">Our Story</a>
+  <a href="#reviews" class="nav-link" data-en="Reviews" data-es="Reseñas">Reviews</a>
+  <a href="#hours" class="nav-link" data-en="Hours" data-es="Horario">Hours</a>
+  <a href="#faq" class="nav-link">FAQ</a>
+  <a href="#contact" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a>
+  <a href="tel:6823254350" class="nav-cta" data-en="Call (682) 325-4350" data-es="Llamar (682) 325-4350">Call (682) 325-4350</a>
+</div>
+
+<!-- ── HERO (v24: full-bleed background image) ────────────── -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-bg-ken" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <p class="hero-eyebrow"
+         data-en="Colleyville, TX · Vietnamese Cuisine"
+         data-es="Colleyville, TX · Cocina Vietnamita">
+        Colleyville, TX · Vietnamese Cuisine
+      </p>
+      <h1 class="hero-title">
+        <em data-en="Pho made right." data-es="Pho auténtico.">Pho made right.</em><br>
+        <strong data-en="Every bowl, from scratch." data-es="Cada tazón, hecho fresco.">Every bowl, from scratch.</strong>
+      </h1>
+      <!-- AI-readable definition -->
+      <p class="hero-ai-def" id="hero-ai-def">
+        Daily Bếp is a family-owned Vietnamese restaurant in Colleyville, TX, specializing in handcrafted pho, bánh mì, and vermicelli bowls — open Tuesday through Saturday.
+      </p>
+      <p class="hero-desc"
+         data-en="A small kitchen where everything is made fresh, every day. No shortcuts. Come hungry."
+         data-es="Una pequeña cocina donde todo se prepara fresco cada día. Sin atajos. Ven con apetito.">
+        A small kitchen where everything is made fresh, every day. No shortcuts. Come hungry.
+      </p>
+      <div class="hero-stats" role="list">
+        <div class="hero-stat" role="listitem">
+          <span class="hero-stat-value">4.9</span>
+          <span class="hero-stat-label" data-en="Google Rating" data-es="Calificación Google">Google Rating</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat" role="listitem">
+          <span class="hero-stat-value">190+</span>
+          <span class="hero-stat-label" data-en="Reviews" data-es="Reseñas">Reviews</span>
+        </div>
+        <div class="hero-stat-divider" aria-hidden="true"></div>
+        <div class="hero-stat" role="listitem">
+          <span class="hero-stat-value">Tue–Sat</span>
+          <span class="hero-stat-label" data-en="Open" data-es="Abierto">Open</span>
+        </div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#menu" class="btn-primary" data-en="View Menu" data-es="Ver Menú">View Menu</a>
+        <a href="tel:6823254350" class="btn-ghost" data-en="(682) 325-4350" data-es="(682) 325-4350">(682) 325-4350</a>
+      </div>
+    </div>
+  </div>
+  <!-- Floating badge — bottom right -->
+  <div class="hero-badge" aria-label="Family owned restaurant">
+    <span class="hero-badge-dot" aria-hidden="true"></span>
+    Family-Owned &amp; Made Fresh Daily
+  </div>
+</section>
+
+<!-- ── PHOTO STRIP ────────────────────────────────────────── -->
+<section class="photo-strip" aria-label="Food gallery">
+  <div class="photo-strip-track">
+    <div class="strip-item"><img src="images/strip-01.jpg" alt="Pho with brisket and herbs" onerror="this.style.display='none'" /></div>
+    <div class="strip-item"><img src="images/strip-02.jpg" alt="Bánh mì sandwich" onerror="this.style.display='none'" /></div>
+    <div class="strip-item"><img src="images/strip-03.jpg" alt="Vermicelli bowl with grilled pork" onerror="this.style.display='none'" /></div>
+    <div class="strip-item"><img src="images/strip-04.jpg" alt="Spring rolls with dipping sauce" onerror="this.style.display='none'" /></div>
+    <div class="strip-item"><img src="images/strip-05.jpg" alt="Vietnamese milk coffee" onerror="this.style.display='none'" /></div>
+  </div>
+</section>
+
+<!-- ── FEATURES ───────────────────────────────────────────── -->
+<section class="features" id="features" aria-labelledby="features-heading">
+  <div class="section-inner">
+    <div class="features-header">
+      <div>
+        <p class="section-label" data-en="Why Guests Keep Coming Back" data-es="Por qué los clientes regresan">Why Guests Keep Coming Back</p>
+        <h2 class="section-title" id="features-heading">
+          The <em>craft</em> is<br>in every detail.
+        </h2>
+      </div>
+      <p class="features-intro">
+        At Daily Bếp, nothing comes from a can or a shortcut. Every broth is simmered from bone. Every bánh mì is made to order. That's why guests drive from across DFW — and keep coming back.
+      </p>
+    </div>
+    <div class="features-grid">
+      <article class="feature-card">
+        <div class="feature-img-wrap">
+          <img src="images/feat-pho.jpg" alt="Pho broth simmered from fresh bone" onerror="this.style.display='none'" />
+        </div>
+        <div class="feature-card-body">
+          <p class="feature-card-tag">Signature</p>
+          <h3>Broth simmered from scratch</h3>
+          <p>Our pho broth takes hours — every single day. No shortcuts, no concentrate. Just bones, spices, and time. You'll taste the difference the moment it hits the table. Guests describe it as the most authentic pho in DFW.</p>
+        </div>
+      </article>
+      <article class="feature-card">
+        <div class="feature-img-wrap">
+          <img src="images/feat-banh-mi.jpg" alt="Cheese steak bánh mì sandwich" onerror="this.style.display='none'" />
+        </div>
+        <div class="feature-card-body">
+          <p class="feature-card-tag">Fan Favorite</p>
+          <h3>Bánh mì built to order</h3>
+          <p>A proper bánh mì needs a proper baguette — crispy outside, pillowy inside. Ours are never made ahead. The Cheese Steak Bánh Mì is one of our most talked-about items, and regulars rarely order just one.</p>
+        </div>
+      </article>
+      <article class="feature-card">
+        <div class="feature-img-wrap">
+          <img src="images/feat-drinks.jpg" alt="Vietnamese milk coffee and boba drinks" onerror="this.style.display='none'" />
+        </div>
+        <div class="feature-card-body">
+          <p class="feature-card-tag">Drinks</p>
+          <h3>Vietnamese beverages worth staying for</h3>
+          <p>Our Vietnamese Iced Coffee is the real thing — bold, sweet, and smooth. Pair it with a Lychee Boba or a fresh Mango Lemonade. We take drinks as seriously as food, because a great meal deserves a great drink to finish.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── STORY ───────────────────────────────────────────────── -->
+<section class="story" id="story" aria-labelledby="story-heading">
+  <div class="story-inner">
+    <div class="story-left">
+      <div class="story-photo-wrap">
+        <img src="images/story.jpg" alt="Daily Bếp restaurant interior — cozy family dining room" onerror="this.style.display='none'" />
+        <div class="story-photo-accent" aria-hidden="true"></div>
+      </div>
+    </div>
+    <div class="story-content">
+      <p class="section-label" data-en="Our Story" data-es="Nuestra Historia">Our Story</p>
+      <h2 class="section-title" id="story-heading">
+        A family kitchen,<br>brought to <em>Colleyville.</em>
+      </h2>
+      <p class="story-body">
+        Daily Bếp started with a simple belief: Vietnamese cooking at its best is home cooking. The word "Bếp" means kitchen in Vietnamese — and that's exactly what we've built. A kitchen where everything matters.
+      </p>
+      <p class="story-body">
+        You'll find spring-inspired decorations, warm lighting, and tables close enough to feel comfortable. It gets busy. But the service stays attentive because we know how much it means when someone trusts you with their dinner.
+      </p>
+      <blockquote class="story-pull">
+        "You can feel the excitement and the love the server has for the food."
+        <br><cite style="font-size:0.78rem; font-style: normal; opacity: 0.7; margin-top: 6px; display:block;">— Google Review</cite>
+      </blockquote>
+      <div class="story-badges" role="list">
+        <span class="story-badge" role="listitem">Family-Owned</span>
+        <span class="story-badge" role="listitem">Made Fresh Daily</span>
+        <span class="story-badge" role="listitem">Dine-In &amp; Takeout</span>
+        <span class="story-badge" role="listitem">Dog-Friendly Patio</span>
+        <span class="story-badge" role="listitem">Vegetarian Options</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MENU ───────────────────────────────────────────────── -->
+<section class="menu" id="menu" aria-labelledby="menu-heading">
+  <div class="section-inner">
+    <p class="section-label" data-en="What We Serve" data-es="Lo que servimos">What We Serve</p>
+    <h2 class="section-title" id="menu-heading" style="color:var(--white)">
+      Fresh from the <em style="color:var(--gold)">kitchen</em>,<br>straight to your table.
+    </h2>
+    <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+      <button class="menu-tab active" data-tab="tab-pho" role="tab" aria-selected="true" data-en="Pho & Noodles" data-es="Pho y Fideos">Pho & Noodles</button>
+      <button class="menu-tab" data-tab="tab-banh-mi" role="tab" aria-selected="false" data-en="Bánh Mì" data-es="Bánh Mì">Bánh Mì</button>
+      <button class="menu-tab" data-tab="tab-bowls" role="tab" aria-selected="false" data-en="Bowls & Plates" data-es="Tazones y Platos">Bowls & Plates</button>
+      <button class="menu-tab" data-tab="tab-drinks" role="tab" aria-selected="false" data-en="Drinks" data-es="Bebidas">Drinks</button>
+    </div>
+
+    <!-- Pho & Noodles -->
+    <div class="menu-panel active" id="tab-pho" role="tabpanel">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Brisket Pho</p>
+            <p class="menu-item-desc">Slow-simmered bone broth with tender brisket, rice noodles, fresh herbs, bean sprouts</p>
+          </div>
+          <span class="menu-item-price">$14</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Steak Pho</p>
+            <p class="menu-item-desc">Thinly sliced eye round steak in aromatic bone broth with fresh herbs and lime</p>
+          </div>
+          <span class="menu-item-price">$14</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Meatball Pho</p>
+            <p class="menu-item-desc">Vietnamese beef meatballs in rich broth with noodles, scallions, and fresh herbs</p>
+          </div>
+          <span class="menu-item-price">$14</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Chicken Pho</p>
+            <p class="menu-item-desc">Poached chicken breast in light, clear chicken broth with rice noodles and herbs</p>
+          </div>
+          <span class="menu-item-price">$13</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Shrimp Pho</p>
+            <p class="menu-item-desc">Plump shrimp in aromatic pho broth with noodles and a full plate of herbs</p>
+          </div>
+          <span class="menu-item-price">$15</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Beef Soba Noodles</p>
+            <p class="menu-item-desc">Sliced beef with soba noodles in a savory broth — a house favorite outside the pho menu</p>
+          </div>
+          <span class="menu-item-price">$14</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Vegetable Pho</p>
+            <p class="menu-item-desc">Real vegetable broth — not chicken stock. Fresh vegetables and tofu with rice noodles</p>
+          </div>
+          <span class="menu-item-price">$13</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Spicy Beef Pho</p>
+            <p class="menu-item-desc">All the depth of our classic broth with added heat — adjustable to your spice level</p>
+          </div>
+          <span class="menu-item-price">$14</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bánh Mì -->
+    <div class="menu-panel" id="tab-banh-mi" role="tabpanel">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Cheese Steak Bánh Mì</p>
+            <p class="menu-item-desc">Thinly sliced steak with melted cheese, pickled daikon, jalapeño, cilantro in a crispy baguette</p>
+          </div>
+          <span class="menu-item-price">$12</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Grilled Pork Bánh Mì</p>
+            <p class="menu-item-desc">Marinated grilled pork with house pickles and fresh herbs in a toasted baguette</p>
+          </div>
+          <span class="menu-item-price">$11</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Oyster Bánh Mì <span style="font-size:0.72rem;color:var(--gold)">New</span></p>
+            <p class="menu-item-desc">Fresh oysters with house sauce, pickled vegetables, and fresh herbs on a crispy roll</p>
+          </div>
+          <span class="menu-item-price">$11.99</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Shrimp Bánh Mì</p>
+            <p class="menu-item-desc">Grilled shrimp with pickled daikon, cucumber, jalapeño, and garlic aioli</p>
+          </div>
+          <span class="menu-item-price">$12</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bowls -->
+    <div class="menu-panel" id="tab-bowls" role="tabpanel">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Grilled Pork Vermicelli</p>
+            <p class="menu-item-desc">Rice vermicelli, chargrilled pork, fresh herbs, cucumber, pickled vegetables, fish sauce</p>
+          </div>
+          <span class="menu-item-price">$14</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Bulgogi Steak Plate</p>
+            <p class="menu-item-desc">Korean-style marinated steak over steamed rice with house sauce and fresh vegetables</p>
+          </div>
+          <span class="menu-item-price">$15</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Spring Rolls (2)</p>
+            <p class="menu-item-desc">Fresh rice paper rolls with shrimp, pork, rice vermicelli, lettuce, and herbs. Served with peanut sauce</p>
+          </div>
+          <span class="menu-item-price">$7.50</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Pork Egg Rolls (3)</p>
+            <p class="menu-item-desc">Crispy fried egg rolls with seasoned pork, glass noodles, and vegetables. Served with dipping sauce</p>
+          </div>
+          <span class="menu-item-price">$7</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Shrimp Dumplings (5)</p>
+            <p class="menu-item-desc">Steamed shrimp dumplings with ginger soy dipping sauce — a guest-recommended starter</p>
+          </div>
+          <span class="menu-item-price">$8</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Grilled Chicken Rice Plate</p>
+            <p class="menu-item-desc">Lemongrass-marinated chicken thigh over steamed jasmine rice with house salad and sauce</p>
+          </div>
+          <span class="menu-item-price">$14</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drinks -->
+    <div class="menu-panel" id="tab-drinks" role="tabpanel">
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Vietnamese Iced Coffee</p>
+            <p class="menu-item-desc">Robusta drip over sweetened condensed milk and ice — strong, smooth, and addictive</p>
+          </div>
+          <span class="menu-item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Vietnamese Milk Coffee</p>
+            <p class="menu-item-desc">Hot or iced Vietnamese coffee with milk — rich, bold, slightly sweet</p>
+          </div>
+          <span class="menu-item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Lychee Milk Tea</p>
+            <p class="menu-item-desc">Black tea with creamy milk and sweet lychee — available with tapioca pearls</p>
+          </div>
+          <span class="menu-item-price">$6</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Peach Milk Tea</p>
+            <p class="menu-item-desc">Smooth peach tea with a creamy finish — light, refreshing, and not too sweet</p>
+          </div>
+          <span class="menu-item-price">$6</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Mango Lemonade</p>
+            <p class="menu-item-desc">Fresh mango blended with house lemonade — bright and refreshing</p>
+          </div>
+          <span class="menu-item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Lychee Lemonade</p>
+            <p class="menu-item-desc">Lychee syrup with fresh lemon juice — floral and light</p>
+          </div>
+          <span class="menu-item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Peach Lemonade</p>
+            <p class="menu-item-desc">House lemonade with fresh peach — sweet, tart, and perfect in Texas heat</p>
+          </div>
+          <span class="menu-item-price">$5</span>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-info">
+            <p class="menu-item-name">Soft Drinks</p>
+            <p class="menu-item-desc">Coke, Diet Coke, Sprite, Dr. Pepper</p>
+          </div>
+          <span class="menu-item-price">$3</span>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:0.78rem; color: oklch(99% 0 0 / 0.40); margin-top: var(--space-5); font-style: italic;">
+      * Menu and prices may change. Please call (682) 325-4350 for the most current menu.
+    </p>
+  </div>
+</section>
+
+<!-- ── REVIEWS ────────────────────────────────────────────── -->
+<section class="reviews" id="reviews" aria-labelledby="reviews-heading">
+  <div class="section-inner">
+    <div class="reviews-header">
+      <div>
+        <p class="section-label" data-en="What Guests Are Saying" data-es="Lo que dicen los clientes">What Guests Are Saying</p>
+        <h2 class="section-title" id="reviews-heading">
+          4.9 stars.<br><em>190+ reviews.</em>
+        </h2>
+      </div>
+      <div class="reviews-score">
+        <span class="reviews-score-big" aria-label="4.9 out of 5">4.9</span>
+        <div class="reviews-score-detail">
+          <div class="stars" aria-hidden="true">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <span class="reviews-count">190+ Google reviews</span>
+        </div>
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        <p class="review-text">"This is by far the BEST Vietnamese restaurant I've ever been to. The pho broth is absolutely perfect — nothing tastes processed or canned. Small family-owned place, and you can feel it in every bowl."</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">M</div>
+          <div class="review-author-info">
+            <span class="review-author-name">Melissa R.</span>
+            <span class="review-source">Google Review</span>
+          </div>
+        </div>
+      </article>
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        <p class="review-text">"You can feel the excitement and the love that the server has for the food. Everything is very nicely priced and very, very good. Food: 5. Service: 5. Atmosphere: 5. We will be back every week."</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">D</div>
+          <div class="review-author-info">
+            <span class="review-author-name">David K.</span>
+            <span class="review-source">Google Review</span>
+          </div>
+        </div>
+      </article>
+      <article class="review-card">
+        <div class="review-stars" aria-label="5 stars">★★★★★</div>
+        <p class="review-text">"The cheese steak bánh mì is absolutely incredible. And the pork egg roll — best I've ever had, no exaggeration. The staff are so kind and friendly. This is officially my favorite restaurant in DFW."</p>
+        <div class="review-author">
+          <div class="review-avatar" aria-hidden="true">J</div>
+          <div class="review-author-info">
+            <span class="review-author-name">Jennifer T.</span>
+            <span class="review-source">Google Review</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── HOURS + MAP ─────────────────────────────────────────── -->
+<section class="hours-map" id="hours" aria-labelledby="hours-heading">
+  <div class="hours-map-inner">
+    <div class="hours-content">
+      <p class="section-label" data-en="Hours & Location" data-es="Horario y Ubicación">Hours & Location</p>
+      <h2 class="section-title" id="hours-heading">
+        Come find us in<br><em>Colleyville.</em>
+      </h2>
+      <div class="hours-table" role="table" aria-label="Business hours">
+        <div class="hours-row" role="row"><span class="hours-day" role="cell">Monday</span><span class="hours-time closed" role="cell">Closed</span></div>
+        <div class="hours-row" role="row"><span class="hours-day" role="cell">Tuesday</span><span class="hours-time" role="cell">11:00 AM – 9:00 PM</span></div>
+        <div class="hours-row" role="row"><span class="hours-day" role="cell">Wednesday</span><span class="hours-time" role="cell">11:00 AM – 9:00 PM</span></div>
+        <div class="hours-row" role="row"><span class="hours-day" role="cell">Thursday</span><span class="hours-time" role="cell">11:00 AM – 9:00 PM</span></div>
+        <div class="hours-row" role="row"><span class="hours-day" role="cell">Friday</span><span class="hours-time" role="cell">11:00 AM – 9:00 PM</span></div>
+        <div class="hours-row" role="row"><span class="hours-day" role="cell">Saturday</span><span class="hours-time" role="cell">11:00 AM – 9:00 PM</span></div>
+        <div class="hours-row" role="row"><span class="hours-day" role="cell">Sunday</span><span class="hours-time closed" role="cell">Closed</span></div>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">📍</div>
+          <div class="contact-detail">
+            <span class="contact-label">Address</span>
+            <span class="contact-value">4620 Colleyville Blvd #108<br>Colleyville, TX 76034</span>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">📞</div>
+          <div class="contact-detail">
+            <span class="contact-label">Phone</span>
+            <a href="tel:6823254350" class="contact-value">(682) 325-4350</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon" aria-hidden="true">✉️</div>
+          <div class="contact-detail">
+            <span class="contact-label">Email</span>
+            <a href="mailto:Dailybep108@gmail.com" class="contact-value">Dailybep108@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map-wrap">
+      <!-- OpenStreetMap iframe: 4620 Colleyville Blvd, Colleyville TX (32.8874, -97.1473) -->
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-97.1523%2C32.8844%2C-97.1423%2C32.8904&amp;layer=mapnik&amp;marker=32.8874%2C-97.1473"
+        width="100%"
+        height="350"
+        style="border:0;border-radius:12px;"
+        loading="lazy"
+        title="Daily Bếp — 4620 Colleyville Blvd #108, Colleyville TX 76034"
+        allowfullscreen>
+      </iframe>
+      <p style="font-size:0.72rem;margin-top:8px;text-align:right;">
+        <a href="https://maps.google.com/?q=Daily+Bep+4620+Colleyville+Blvd+Colleyville+TX" target="_blank" rel="noopener" class="map-link">
+          Get Directions on Google Maps →
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ────────────────────────────────────────────────── -->
+<section class="faq" id="faq" aria-labelledby="faq-heading">
+  <div class="section-inner">
+    <div class="faq-grid">
+      <div class="faq-intro">
+        <p class="section-label">Questions</p>
+        <h2 class="section-title" id="faq-heading">
+          Everything you need<br>to <em>know before you go.</em>
+        </h2>
+        <p class="faq-intro-body">
+          First time at Daily Bếp? Here are the answers to what guests ask most. Still have questions — just call us at <a href="tel:6823254350" style="color:var(--terracotta); font-weight:600;">(682) 325-4350</a>.
+        </p>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What are your hours?
+            <span class="faq-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Tuesday through Saturday, 11:00 AM to 9:00 PM. We are closed on Monday and Sunday. Hours may vary on holidays — call ahead if you're unsure.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Where exactly are you located?
+            <span class="faq-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer" role="region">
+            We're at 4620 Colleyville Blvd #108, Colleyville, TX 76034 — in the shopping center with free parking right in front.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do I need a reservation?
+            <span class="faq-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Walk-ins are always welcome. For larger groups of 8 or more, we recommend calling ahead at (682) 325-4350 so we can have space ready for you.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I order takeout?
+            <span class="faq-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Yes, takeout is available. Call us at (682) 325-4350 to place your order and we'll have it ready for pickup. We can also tell you the current estimated wait time.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What are your most popular dishes?
+            <span class="faq-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Our top guest favorites are the Brisket Pho, Cheese Steak Bánh Mì, Grilled Pork Vermicelli Bowl, Pork Egg Rolls, and Vietnamese Iced Coffee. If it's your first visit, the Brisket Pho is the place to start.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you have vegetarian options?
+            <span class="faq-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Yes — we offer a Vegetable Pho made with real vegetable broth, which is hard to find. We also have other dishes that can accommodate dietary preferences. Give us a call if you'd like to confirm what's available today.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do you have drinks other than sodas?
+            <span class="faq-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Absolutely — our drink menu includes Vietnamese Iced Coffee, Vietnamese Milk Coffee, Boba Milk Teas (Lychee and Peach), and fresh Lemonades in Mango, Lychee, and Peach. Our Vietnamese Iced Coffee is a guest favorite.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How much does a meal cost?
+            <span class="faq-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Most bowls and plates range from $13 to $16. Appetizers are $7–$8. Drinks are $5–$7. Portions are generous and prices are very fair — guests consistently mention the value in their reviews.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Is Daily Bếp family-owned?
+            <span class="faq-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Yes — Daily Bếp is a small, family-owned and operated restaurant. Everything is cooked fresh from scratch in our kitchen. "Bếp" means kitchen in Vietnamese, and that spirit is behind everything we do.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Are dogs allowed?
+            <span class="faq-icon" aria-hidden="true">▾</span>
+          </button>
+          <div class="faq-answer" role="region">
+            Dogs are welcome outside. We're dog-friendly, so feel free to bring your pup and join us on the patio area.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ─────────────────────────────────────────────── -->
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info-side">
+        <p class="section-label" data-en="Get in Touch" data-es="Contáctanos">Get in Touch</p>
+        <h2 class="section-title" id="contact-heading">
+          Questions or<br><em>large groups?</em><br>We're here.
+        </h2>
+        <p class="contact-body">
+          Whether you're planning a group dinner, have a question about the menu, or want to check on today's specials — reach out anytime. We'll get back to you the same day.
+        </p>
+        <div class="contact-info" style="margin-top: var(--space-2);">
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">📞</div>
+            <div class="contact-detail">
+              <span class="contact-label">Best way to reach us</span>
+              <a href="tel:6823254350" class="contact-value">(682) 325-4350</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">✉️</div>
+            <div class="contact-detail">
+              <span class="contact-label">Email</span>
+              <a href="mailto:Dailybep108@gmail.com" class="contact-value">Dailybep108@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" id="name" type="text" placeholder="Your name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone</label>
+            <input class="form-input" id="phone" type="tel" placeholder="(xxx) xxx-xxxx" autocomplete="tel" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" id="email" type="email" placeholder="your@email.com" required autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="subject">What's this about?</label>
+          <select class="form-select" id="subject">
+            <option value="">Select a topic</option>
+            <option value="group">Large group / party reservation</option>
+            <option value="menu">Menu question</option>
+            <option value="catering">Catering inquiry</option>
+            <option value="other">General question</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-textarea" id="message" placeholder="How can we help?" rows="4"></textarea>
+        </div>
+        <button type="submit" class="form-submit" data-en="Send Message" data-es="Enviar Mensaje">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ──────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <p class="footer-logo">Daily <span>Bếp</span></p>
+      <p class="footer-tagline">Authentic Vietnamese cuisine, made from scratch every day. A family kitchen in Colleyville, TX.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=61558935092789" class="social-btn" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Menu</p>
+      <ul>
+        <li><a href="#menu">Pho & Noodles</a></li>
+        <li><a href="#menu">Bánh Mì</a></li>
+        <li><a href="#menu">Bowls & Plates</a></li>
+        <li><a href="#menu">Drinks</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Visit Us</p>
+      <ul>
+        <li><a href="#hours">Hours</a></li>
+        <li><a href="#hours">Location</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p style="font-size:0.82rem; color: oklch(99% 0 0 / 0.50); margin-top: var(--space-2); line-height: 1.5;">
+        4620 Colleyville Blvd #108<br>
+        Colleyville, TX 76034<br>
+        <a href="tel:6823254350" style="color: oklch(99% 0 0 / 0.50);">(682) 325-4350</a>
+      </p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Daily Bếp Vietnamese Cuisine and Noodles House. All rights reserved.</p>
+    <p>Tue–Sat 11am–9pm · Closed Mon &amp; Sun</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
