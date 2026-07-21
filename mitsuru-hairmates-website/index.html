@@ -30,7 +30,10 @@
      3) 料金表の最新性（既存サイト price ページ由来）
      4) GBP の claim 状態
      5) FAQ「フォームからの予約受付」はオーナー運用合意が前提
-     6) レビューはGoogle実データ（★4.7 / 86件）。掲載件数・文言は本番前に再確認 -->
+     6) レビューはGoogle実データ（★4.7 / 86件）。掲載件数・文言は本番前に再確認
+     7) ギャラリー画像とヒーロー画像はAI生成のイメージ（実際の施術例・実店舗ではない）。公開前に
+        Instagram(@mitsuruhairmates)の実際の施術写真・店内写真へ差し替える前提。実例と称して公開しないこと。
+        ※ stylist.jpg は赤沼さん本人の実写に差し替え済み -->
 
 <!-- HairSalon 構造化データ -->
 <script type="application/ld+json">
@@ -199,16 +202,17 @@
       <button class="filter-btn" data-filter="salon" type="button" data-i18n="gal_salon">Salon</button>
     </div>
 
-    <!-- ▼ プレースホルダー画像。本番は実際の施術写真（オーナー提供）に差し替える -->
+    <!-- ▼ 画像はAI生成のイメージ（実際の施術例ではない）。公開前に赤沼さんの実作例へ差し替える前提。
+         alt は髪型の描写にとどめ「当店の施術例」とは断言しない -->
     <div class="gal-grid">
-      <figure class="gal-item is-tall" data-cat="cut"><img src="images/gallery-01.jpg" alt="Precision cut" loading="lazy" onerror="this.style.display='none'"></figure>
-      <figure class="gal-item" data-cat="color"><img src="images/gallery-02.jpg" alt="Color work" loading="lazy" onerror="this.style.display='none'"></figure>
-      <figure class="gal-item" data-cat="straightening"><img src="images/gallery-03.jpg" alt="Japanese straightening" loading="lazy" onerror="this.style.display='none'"></figure>
-      <figure class="gal-item" data-cat="cut"><img src="images/gallery-04.jpg" alt="Haircut" loading="lazy" onerror="this.style.display='none'"></figure>
-      <figure class="gal-item is-wide" data-cat="salon"><img src="images/gallery-05.jpg" alt="Salon" loading="lazy" onerror="this.style.display='none'"></figure>
-      <figure class="gal-item" data-cat="color"><img src="images/gallery-06.jpg" alt="Color" loading="lazy" onerror="this.style.display='none'"></figure>
-      <figure class="gal-item" data-cat="straightening"><img src="images/gallery-07.jpg" alt="Straightening" loading="lazy" onerror="this.style.display='none'"></figure>
-      <figure class="gal-item" data-cat="cut"><img src="images/gallery-08.jpg" alt="Cut" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="gal-item is-tall" data-cat="cut"><img src="images/gallery-01.jpg" alt="Sleek black bob, back view" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="gal-item" data-cat="color"><img src="images/gallery-02.jpg" alt="Long chestnut-brown waves" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="gal-item" data-cat="straightening"><img src="images/gallery-03.jpg" alt="Glossy straight black hair, profile" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="gal-item" data-cat="cut"><img src="images/gallery-04.jpg" alt="Layered bob with soft flicks" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="gal-item is-wide" data-cat="salon"><img src="images/gallery-05.jpg" alt="Private styling room" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="gal-item" data-cat="color"><img src="images/gallery-06.jpg" alt="Balayage highlights on wavy hair" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="gal-item" data-cat="straightening"><img src="images/gallery-07.jpg" alt="Smooth, straightened hair" loading="lazy" onerror="this.style.display='none'"></figure>
+      <figure class="gal-item" data-cat="cut"><img src="images/gallery-08.jpg" alt="Graduated bob, side view" loading="lazy" onerror="this.style.display='none'"></figure>
     </div>
     <div class="gal-cta">
       <a class="btn btn-primary" href="#contact" data-i18n="gal_book">Book your appointment</a>
@@ -220,8 +224,8 @@
 <section class="section story" id="story">
   <div class="wrap story-grid">
     <div class="story-media">
-      <!-- ▼ プレースホルダー。本番は Mitsuru 本人のポートレートに差し替える（枠は付けない） -->
-      <img src="images/stylist.jpg" alt="Mitsuru, stylist" loading="lazy" onerror="this.style.display='none'">
+      <!-- ▼ 赤沼さん本人の実写（オーナー提供）。差し替え済み。枠は付けない -->
+      <img src="images/stylist.jpg" alt="Mitsuru at work" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="story-text">
       <p class="eyebrow" data-i18n="story_eyebrow">About</p>
